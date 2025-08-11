@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 10" width="600" height="10" role="img" aria-label="Animated underline">
+  <defs>
+    <linearGradient id="ug" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#36BCF7"/>
+      <stop offset="50%" stop-color="#7C4DFF"/>
+      <stop offset="100%" stop-color="#36BCF7"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="4" width="600" height="2" fill="rgba(124,77,255,0.15)"/>
+  <rect x="0" y="3.5" width="120" height="3" rx="1.5" fill="url(#ug)">
+    <animate attributeName="x" values="-120;600" dur="3.5s" repeatCount="indefinite"/>
+  </rect>
+</svg>

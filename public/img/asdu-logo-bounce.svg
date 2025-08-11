@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="img" aria-label="ASDU animated ring">
+  <defs>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#36BCF7" />
+      <stop offset="100%" stop-color="#7C4DFF" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="transparent"/>
+
+  <!-- Anillo giratorio -->
+  <g filter="url(#glow)">
+    <circle cx="100" cy="100" r="78" fill="none" stroke="url(#ring)" stroke-width="6" stroke-linecap="round" stroke-dasharray="140 40 20 60"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="8s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Pulso suave del anillo para dar vida -->
+  <circle cx="100" cy="100" r="74" fill="none" stroke="#36BCF7" stroke-opacity="0.35" stroke-width="1">
+    <animate attributeName="r" values="72;74;72" dur="2.4s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0.15;0.35;0.15" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+</svg>

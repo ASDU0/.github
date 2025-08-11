@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" width="1200" height="180" role="img" aria-label="ASDU header" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#36BCF7"/>
+      <stop offset="50%" stop-color="#7C4DFF"/>
+      <stop offset="100%" stop-color="#36BCF7"/>
+      <animate attributeName="x2" values="100%;0%;100%" dur="12s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="gtext" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#e0eaff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <animate attributeName="x1" values="0%;100%;0%" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="100%;0%;100%" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#36BCF7" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="180" fill="transparent" />
+
+  <!-- Olas -->
+  <g>
+    <path d="M0,110 C180,65 360,65 540,110 C720,155 900,155 1080,110 C1140,90 1170,90 1200,110 L1200,180 L0,180 Z" fill="url(#g1)" fill-opacity="0.24">
+      <animateTransform attributeName="transform" type="translate" values="-10 0; 10 0; -10 0" dur="8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M0,120 C200,85 400,85 600,120 C800,155 1000,155 1200,120 L1200,180 L0,180 Z" fill="url(#g1)" fill-opacity="0.16">
+      <animateTransform attributeName="transform" type="translate" values="10 0; -10 0; 10 0" dur="9s" repeatCount="indefinite"/>
+    </path>
+    <path d="M0,135 C250,115 450,115 700,135 C950,155 1050,155 1200,135 L1200,180 L0,180 Z" fill="url(#g1)" fill-opacity="0.12">
+      <animateTransform attributeName="transform" type="translate" values="-6 0; 6 0; -6 0" dur="7s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Texto central -->
+  <g filter="url(#softShadow)">
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 1.5; 0 0" dur="6s" repeatCount="indefinite"/>
+    <text x="600" y="78" text-anchor="middle" style="font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 56px; font-weight: 900; letter-spacing: 0.6px; fill: url(#gtext);">
+      ASDU
+    </text>
+    <text x="600" y="112" text-anchor="middle" style="font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 18px; font-weight: 700; fill: #d7eaff; opacity: 0.98; letter-spacing: 0.2px;">
+      Association of Software Developers UNSAAC
+    </text>
+  </g>
+</svg>

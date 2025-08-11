@@ -9,31 +9,7 @@
 			<!-- Anillo animado debajo -->
 				<img src="../public/img/asdu-logo-bounce.svg" alt="Anillo animado" style="position:absolute; inset:0; width:210px; height:210px; z-index:1; opacity:.95;" />
 			<!-- Logo original encima -->
-				<!-- Logo con glow amarillo y latido suave usando filtro SVG -->
-				<svg width="136" height="136" viewBox="0 0 136 136" style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); z-index:2;">
-					<defs>
-						<filter id="pulseGlow" x="-40%" y="-40%" width="180%" height="180%">
-							<!-- sombra sutil para relieve -->
-							<feDropShadow dx="0" dy="1" stdDeviation="0.7" flood-color="#000000" flood-opacity="0.32" result="shadow"/>
-							<!-- blur del alfa del logo -->
-							<feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur">
-								<animate attributeName="stdDeviation" values="2;3.2;2" dur="3s" repeatCount="indefinite"/>
-							</feGaussianBlur>
-							<!-- color amarillo aplicado al blur -->
-							<feFlood flood-color="#FACC15" flood-opacity="0.22" result="flood">
-								<animate attributeName="flood-opacity" values="0.18;0.30;0.18" dur="3s" repeatCount="indefinite"/>
-							</feFlood>
-							<feComposite in="flood" in2="blur" operator="in" result="coloredBlur"/>
-							<!-- mezcla: sombra + glow + original -->
-							<feMerge>
-								<feMergeNode in="shadow"/>
-								<feMergeNode in="coloredBlur"/>
-								<feMergeNode in="SourceGraphic"/>
-							</feMerge>
-						</filter>
-					</defs>
-					<image href="../public/img/asdunewlogo.png" x="0" y="0" width="136" height="136" style="image-rendering:auto;" filter="url(#pulseGlow)"/>
-				</svg>
+				<img src="../public/img/asdunewlogo.png" alt="ASDU Logo" style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:136px; height:136px; object-fit:contain; z-index:2; filter: drop-shadow(0 1px 2px rgba(0,0,0,.25)) drop-shadow(0 0 5px #FACC15) drop-shadow(0 0 10px rgba(250,204,21,0.35)) drop-shadow(0 0 14px rgba(245,158,11,0.25));" />
 		</div>
 	</div>
 </div>
@@ -112,35 +88,10 @@ Somos un círculo de estudios donde aprendemos haciendo: pequeños retos, taller
 				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-plain.svg" alt="GitHub Actions" height="16" style="vertical-align:middle; filter:invert(1) brightness(2);"/>
 		</span>
 	</summary>
-	<div align="center" style="margin:10px 0 4px; display:inline-block; width:min(100%, 420px);">
-		<a href="https://github.com/ASDU0/Noticias_Tech_ASDU" title="Noticias_Tech_ASDU" style="display:block;">
-			<svg viewBox="0 0 420 236.25" width="100%" role="img" aria-label="OG Noticias_Tech_ASDU con marco" xmlns="http://www.w3.org/2000/svg">
-				<defs>
-					<linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%">
-						<stop offset="0%" stop-color="#36BCF7"/>
-						<stop offset="50%" stop-color="#7C4DFF"/>
-						<stop offset="100%" stop-color="#36BCF7"/>
-					</linearGradient>
-					<clipPath id="clip1">
-						<rect x="6" y="6" width="408" height="224.25" rx="14" ry="14"/>
-					</clipPath>
-					<filter id="glow1" x="-20%" y="-20%" width="140%" height="140%">
-						<feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#36BCF7" flood-opacity="0.35"/>
-					</filter>
-					<filter id="glow1soft" x="-20%" y="-20%" width="140%" height="140%">
-						<feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#7C4DFF" flood-opacity="0.35"/>
-					</filter>
-					<style>
-						.preview{transition:transform .25s ease, filter .25s ease; transform-box:fill-box; transform-origin:50% 50%;}
-						.frame{transition:filter .25s ease, opacity .25s ease;}
-						svg:hover .preview{transform:scale(1.02); filter:url(#glow1);}
-						svg:hover .frame{filter:url(#glow1soft); opacity:.98;}
-					</style>
-				</defs>
-				<rect x="1.5" y="1.5" width="417" height="233.25" rx="16" ry="16" fill="rgba(0,0,0,0.15)" stroke="url(#g1)" stroke-width="2.5" stroke-dasharray="12 8" class="frame"/>
-				<image href="https://opengraph.githubassets.com/1/ASDU0/Noticias_Tech_ASDU" x="6" y="6" width="408" height="224.25" clip-path="url(#clip1)" class="preview"/>
-				<rect x="6" y="6" width="408" height="224.25" rx="14" ry="14" fill="none" stroke="url(#g1)" stroke-width="1.2" class="frame"/>
-			</svg>
+	<div align="center" style="margin:10px 0 4px; position:relative; width:min(100%, 420px); padding-top:56.25%; display:inline-block;">
+		<a href="https://github.com/ASDU0/Noticias_Tech_ASDU" title="Noticias_Tech_ASDU" style="display:block; position:absolute; inset:0; width:100%; height:100%;">
+			<img src="../public/img/card-frame.svg" alt="frame" style="position:absolute; inset:0; width:100%; height:100%;" />
+			<img src="https://opengraph.githubassets.com/1/ASDU0/Noticias_Tech_ASDU" alt="OG Noticias_Tech_ASDU" style="position:absolute; left:6px; top:6px; width:calc(100% - 12px); height:calc(100% - 12px); border-radius:14px; object-fit:cover;" />
 		</a>
 	</div>
 	<p align="center" style="margin:6px 0 2px;">
@@ -165,35 +116,10 @@ Somos un círculo de estudios donde aprendemos haciendo: pequeños retos, taller
 				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" height="16" style="vertical-align:middle; filter:invert(1) brightness(2);"/>
 		</span>
 	</summary>
-	<div align="center" style="margin:10px 0 4px; display:inline-block; width:min(100%, 420px);">
-		<a href="https://github.com/ASDU0/schedule-project" title="schedule-project" style="display:block;">
-			<svg viewBox="0 0 420 236.25" width="100%" role="img" aria-label="OG schedule-project con marco" xmlns="http://www.w3.org/2000/svg">
-				<defs>
-					<linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="0%">
-						<stop offset="0%" stop-color="#36BCF7"/>
-						<stop offset="50%" stop-color="#7C4DFF"/>
-						<stop offset="100%" stop-color="#36BCF7"/>
-					</linearGradient>
-					<clipPath id="clip2">
-						<rect x="6" y="6" width="408" height="224.25" rx="14" ry="14"/>
-					</clipPath>
-					<filter id="glow2" x="-20%" y="-20%" width="140%" height="140%">
-						<feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#36BCF7" flood-opacity="0.35"/>
-					</filter>
-					<filter id="glow2soft" x="-20%" y="-20%" width="140%" height="140%">
-						<feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#7C4DFF" flood-opacity="0.35"/>
-					</filter>
-					<style>
-						.preview{transition:transform .25s ease, filter .25s ease; transform-box:fill-box; transform-origin:50% 50%;}
-						.frame{transition:filter .25s ease, opacity .25s ease;}
-						svg:hover .preview{transform:scale(1.02); filter:url(#glow2);}
-						svg:hover .frame{filter:url(#glow2soft); opacity:.98;}
-					</style>
-				</defs>
-				<rect x="1.5" y="1.5" width="417" height="233.25" rx="16" ry="16" fill="rgba(0,0,0,0.15)" stroke="url(#g2)" stroke-width="2.5" stroke-dasharray="12 8" class="frame"/>
-				<image href="https://opengraph.githubassets.com/1/ASDU0/schedule-project" x="6" y="6" width="408" height="224.25" clip-path="url(#clip2)" class="preview"/>
-				<rect x="6" y="6" width="408" height="224.25" rx="14" ry="14" fill="none" stroke="url(#g2)" stroke-width="1.2" class="frame"/>
-			</svg>
+	<div align="center" style="margin:10px 0 4px; position:relative; width:min(100%, 420px); padding-top:56.25%; display:inline-block;">
+		<a href="https://github.com/ASDU0/schedule-project" title="schedule-project" style="display:block; position:absolute; inset:0; width:100%; height:100%;">
+			<img src="../public/img/card-frame.svg" alt="frame" style="position:absolute; inset:0; width:100%; height:100%;" />
+			<img src="https://opengraph.githubassets.com/1/ASDU0/schedule-project" alt="OG schedule-project" style="position:absolute; left:6px; top:6px; width:calc(100% - 12px); height:calc(100% - 12px); border-radius:14px; object-fit:cover;" />
 		</a>
 	</div>
 	<p align="center" style="margin:6px 0 2px;">
@@ -219,35 +145,10 @@ Somos un círculo de estudios donde aprendemos haciendo: pequeños retos, taller
 				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-plain.svg" alt="CI/CD" height="16" style="vertical-align:middle; filter:invert(1) brightness(2);"/>
 		</span>
 	</summary>
-	<div align="center" style="margin:10px 0 4px; display:inline-block; width:min(100%, 420px);">
-		<a href="https://github.com/ASDU0/New-Web-Page-ASDU" title="New-Web-Page-ASDU" style="display:block;">
-			<svg viewBox="0 0 420 236.25" width="100%" role="img" aria-label="OG New-Web-Page-ASDU con marco" xmlns="http://www.w3.org/2000/svg">
-				<defs>
-					<linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="0%">
-						<stop offset="0%" stop-color="#36BCF7"/>
-						<stop offset="50%" stop-color="#7C4DFF"/>
-						<stop offset="100%" stop-color="#36BCF7"/>
-					</linearGradient>
-					<clipPath id="clip3">
-						<rect x="6" y="6" width="408" height="224.25" rx="14" ry="14"/>
-					</clipPath>
-					<filter id="glow3" x="-20%" y="-20%" width="140%" height="140%">
-						<feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#36BCF7" flood-opacity="0.35"/>
-					</filter>
-					<filter id="glow3soft" x="-20%" y="-20%" width="140%" height="140%">
-						<feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#7C4DFF" flood-opacity="0.35"/>
-					</filter>
-					<style>
-						.preview{transition:transform .25s ease, filter .25s ease; transform-box:fill-box; transform-origin:50% 50%;}
-						.frame{transition:filter .25s ease, opacity .25s ease;}
-						svg:hover .preview{transform:scale(1.02); filter:url(#glow3);}
-						svg:hover .frame{filter:url(#glow3soft); opacity:.98;}
-					</style>
-				</defs>
-				<rect x="1.5" y="1.5" width="417" height="233.25" rx="16" ry="16" fill="rgba(0,0,0,0.15)" stroke="url(#g3)" stroke-width="2.5" stroke-dasharray="12 8" class="frame"/>
-				<image href="https://opengraph.githubassets.com/1/ASDU0/New-Web-Page-ASDU" x="6" y="6" width="408" height="224.25" clip-path="url(#clip3)" class="preview"/>
-				<rect x="6" y="6" width="408" height="224.25" rx="14" ry="14" fill="none" stroke="url(#g3)" stroke-width="1.2" class="frame"/>
-			</svg>
+	<div align="center" style="margin:10px 0 4px; position:relative; width:min(100%, 420px); padding-top:56.25%; display:inline-block;">
+		<a href="https://github.com/ASDU0/New-Web-Page-ASDU" title="New-Web-Page-ASDU" style="display:block; position:absolute; inset:0; width:100%; height:100%;">
+			<img src="../public/img/card-frame.svg" alt="frame" style="position:absolute; inset:0; width:100%; height:100%;" />
+			<img src="https://opengraph.githubassets.com/1/ASDU0/New-Web-Page-ASDU" alt="OG New-Web-Page-ASDU" style="position:absolute; left:6px; top:6px; width:calc(100% - 12px); height:calc(100% - 12px); border-radius:14px; object-fit:cover;" />
 		</a>
 	</div>
 	<p align="center" style="margin:6px 0 2px;">

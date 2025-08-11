@@ -3,15 +3,12 @@
 </p>
 
 <div align="center" style="display:flex;justify-content:center;">
-	<!-- Tarjeta del logo con borde, radio y sombra sutil -->
+	<!-- Tarjeta del logo (simple y compatible con GitHub) -->
 		<div style="background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0)); border:1px solid rgba(250,204,21,0.22); padding:18px 28px; border-radius:18px; box-shadow:0 12px 24px rgba(234,179,8,0.10), 0 0 14px rgba(250,204,21,0.18), 0 0 26px rgba(245,158,11,0.12); display:inline-block;">
-			<div style="position:relative; width:210px; height:210px;">
-			<!-- Anillo animado debajo -->
-				<img src="../public/img/asdu-logo-bounce.svg" alt="Anillo animado" style="position:absolute; inset:0; width:210px; height:210px; z-index:1; opacity:.95;" />
-			<!-- Logo original encima -->
-				<img src="../public/img/asdunewlogo.png" alt="ASDU Logo" style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:136px; height:136px; object-fit:contain; z-index:2; filter: drop-shadow(0 1px 2px rgba(0,0,0,.25)) drop-shadow(0 0 5px #FACC15) drop-shadow(0 0 10px rgba(250,204,21,0.35)) drop-shadow(0 0 14px rgba(245,158,11,0.25));" />
+			<div style="width:210px; display:flex; align-items:center; justify-content:center;">
+				<img src="../public/img/asdunewlogo.png" alt="ASDU Logo" style="width:160px; height:auto; filter: drop-shadow(0 1px 2px rgba(0,0,0,.25)) drop-shadow(0 0 5px #FACC15) drop-shadow(0 0 10px rgba(250,204,21,0.35)) drop-shadow(0 0 14px rgba(245,158,11,0.25));" />
+			</div>
 		</div>
-	</div>
 </div>
 
 <p align="center">
@@ -88,10 +85,9 @@ Somos un círculo de estudios donde aprendemos haciendo: pequeños retos, taller
 				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-plain.svg" alt="GitHub Actions" height="16" style="vertical-align:middle; filter:invert(1) brightness(2);"/>
 		</span>
 	</summary>
-	<div align="center" style="margin:10px 0 4px; position:relative; width:min(100%, 420px); padding-top:56.25%; display:inline-block;">
-		<a href="https://github.com/ASDU0/Noticias_Tech_ASDU" title="Noticias_Tech_ASDU" style="display:block; position:absolute; inset:0; width:100%; height:100%;">
-			<img src="../public/img/card-frame.svg" alt="frame" style="position:absolute; inset:0; width:100%; height:100%;" />
-			<img src="https://opengraph.githubassets.com/1/ASDU0/Noticias_Tech_ASDU" alt="OG Noticias_Tech_ASDU" style="position:absolute; left:6px; top:6px; width:calc(100% - 12px); height:calc(100% - 12px); border-radius:14px; object-fit:cover;" />
+	<div align="center" style="margin:10px 0 4px;">
+		<a href="https://github.com/ASDU0/Noticias_Tech_ASDU" title="Noticias_Tech_ASDU" style="display:inline-block; text-decoration:none;">
+			<img src="https://opengraph.githubassets.com/1/ASDU0/Noticias_Tech_ASDU" alt="OG Noticias_Tech_ASDU" style="display:block; width:420px; max-width:100%; height:auto; border-radius:14px; border:1px solid rgba(124,77,255,0.35); box-shadow:0 8px 20px rgba(54,188,247,0.12);" />
 		</a>
 	</div>
 	<p align="center" style="margin:6px 0 2px;">
@@ -116,10 +112,9 @@ Somos un círculo de estudios donde aprendemos haciendo: pequeños retos, taller
 				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" height="16" style="vertical-align:middle; filter:invert(1) brightness(2);"/>
 		</span>
 	</summary>
-	<div align="center" style="margin:10px 0 4px; position:relative; width:min(100%, 420px); padding-top:56.25%; display:inline-block;">
-		<a href="https://github.com/ASDU0/schedule-project" title="schedule-project" style="display:block; position:absolute; inset:0; width:100%; height:100%;">
-			<img src="../public/img/card-frame.svg" alt="frame" style="position:absolute; inset:0; width:100%; height:100%;" />
-			<img src="https://opengraph.githubassets.com/1/ASDU0/schedule-project" alt="OG schedule-project" style="position:absolute; left:6px; top:6px; width:calc(100% - 12px); height:calc(100% - 12px); border-radius:14px; object-fit:cover;" />
+	<div align="center" style="margin:10px 0 4px;">
+		<a href="https://github.com/ASDU0/schedule-project" title="schedule-project" style="display:inline-block; text-decoration:none;">
+			<img src="https://opengraph.githubassets.com/1/ASDU0/schedule-project" alt="OG schedule-project" style="display:block; width:420px; max-width:100%; height:auto; border-radius:14px; border:1px solid rgba(124,77,255,0.35); box-shadow:0 8px 20px rgba(54,188,247,0.12);" />
 		</a>
 	</div>
 	<p align="center" style="margin:6px 0 2px;">
@@ -145,10 +140,9 @@ Somos un círculo de estudios donde aprendemos haciendo: pequeños retos, taller
 				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-plain.svg" alt="CI/CD" height="16" style="vertical-align:middle; filter:invert(1) brightness(2);"/>
 		</span>
 	</summary>
-	<div align="center" style="margin:10px 0 4px; position:relative; width:min(100%, 420px); padding-top:56.25%; display:inline-block;">
-		<a href="https://github.com/ASDU0/New-Web-Page-ASDU" title="New-Web-Page-ASDU" style="display:block; position:absolute; inset:0; width:100%; height:100%;">
-			<img src="../public/img/card-frame.svg" alt="frame" style="position:absolute; inset:0; width:100%; height:100%;" />
-			<img src="https://opengraph.githubassets.com/1/ASDU0/New-Web-Page-ASDU" alt="OG New-Web-Page-ASDU" style="position:absolute; left:6px; top:6px; width:calc(100% - 12px); height:calc(100% - 12px); border-radius:14px; object-fit:cover;" />
+	<div align="center" style="margin:10px 0 4px;">
+		<a href="https://github.com/ASDU0/New-Web-Page-ASDU" title="New-Web-Page-ASDU" style="display:inline-block; text-decoration:none;">
+			<img src="https://opengraph.githubassets.com/1/ASDU0/New-Web-Page-ASDU" alt="OG New-Web-Page-ASDU" style="display:block; width:420px; max-width:100%; height:auto; border-radius:14px; border:1px solid rgba(124,77,255,0.35); box-shadow:0 8px 20px rgba(54,188,247,0.12);" />
 		</a>
 	</div>
 	<p align="center" style="margin:6px 0 2px;">
